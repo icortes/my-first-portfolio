@@ -1,7 +1,7 @@
 :root{
-    --heavyColor: #626099;
-    --lightColor: #D5D4FF;
-    --complimentary: #E6DBA8;
+    --heavyColor: #CA786D;
+    --lightColor: #D6FAFD;
+    --complimentary: #535459;
 }
 
 body{
@@ -15,16 +15,16 @@ header{
     justify-content: space-between;
     /* background-image: url("../images/banner_img.png"); */
     background-color: var(--heavyColor);
-    position: relative;
+    position: fixed;
     width: 100%;
-    
+    z-index: 3;
 }
 
 header .name{
     font-size: 275%;
-    color: var(--heavyColor);
+    color: var(--complimentary);
     padding-left: 10px;
-    background-color: var(--complimentary);
+    margin: 0;
     
     
 }
@@ -34,29 +34,53 @@ header nav{
 }
 
 header nav ul{
-    padding-left: 0%;
-    margin-top: 50px;
-    margin-bottom: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     
 }
 
 header nav ul li{
-    display: inline;
-    font-size: 20px;
-    padding: 5px;
-    
+    float: left;
+}
+
+header nav ul li a{
+    display: block;
+    color: var(--complimentary);
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header nav ul li a:hover{
+    background-color: #FF9789;
 }
 
 main{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    max-width: 1350px;
+    margin: auto;
+    z-index: 2;
+}
+
+#background-split{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #95AEB0;
+    z-index: 1;
 }
 
 .container{
     display: flex;
     padding-top: 50px;
     min-width: 800px;
+    z-index: inherit;
 }
 
 h2{
@@ -74,13 +98,33 @@ h2{
     border-color: black;
 }
 
+#work{
+    padding-right: 88px;
+}
+
+#big-img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
 #contact-list{
     display:flex;
     justify-content: space-evenly;
     position: relative;
     align-items: center;
-    width: 100%;
+    width: fit-content;
 }
 #contact-list li{
     display: inline;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+#contact-me{
+    padding-right: 48px;
+}
+
+footer{
+    z-index: inherit;
 }
