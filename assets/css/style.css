@@ -21,7 +21,7 @@ header{
 }
 
 header .name{
-    font-size: 250%;
+    font-size: 275%;
     color: var(--heavyColor);
     padding-left: 10px;
     background-color: var(--complimentary);
@@ -49,29 +49,38 @@ header nav ul li{
 
 main{
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.about-me-container{
+.container{
     display: flex;
     padding-top: 50px;
+    min-width: 800px;
 }
 
 h2{
     font-size: 200%;
     padding-left: 50px;
     padding-right: 75px;
-    flex-grow: 1;
     color: var(--heavyColor);
     
 }
 
-
-#about-me-p{
+.items{
     padding-left: 10px;
     padding-right: 50px;
     border-left: solid;
-    border-color: var(--complimentary);
-    flex-grow: 3;
+    border-color: black;
+}
+
+#contact-list{
+    display:flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    width: 100%;
+}
+#contact-list li{
+    display: inline;
 }
