@@ -1,16 +1,16 @@
-:root{
+:root {
     --heavyColor: #CA786D;
     --lightColor: #D6FAFD;
     --complimentary: #535459;
 }
 
-body{
+body {
     background-color: var(--lightColor);
     font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     /* background-image: url("../images/banner_img.png"); */
@@ -20,32 +20,30 @@ header{
     z-index: 3;
 }
 
-header .name{
+header .name {
     font-size: 275%;
     color: var(--complimentary);
     padding-left: 10px;
     margin: 0;
-    
-    
 }
 
-header nav{
+header nav {
     padding-left: 20%;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
+
 }
 
-header nav ul li{
+header nav ul li {
     float: left;
 }
 
-header nav ul li a{
+header nav ul li a {
     display: block;
     color: var(--complimentary);
     text-align: center;
@@ -54,11 +52,11 @@ header nav ul li a{
     font-weight: bolder;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
     background-color: #FF9789;
 }
 
-main{
+main {
     display: flex;
     flex-wrap: wrap;
     max-width: 1350px;
@@ -66,7 +64,7 @@ main{
     z-index: 2;
 }
 
-#background-split{
+#background-split {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -76,55 +74,56 @@ main{
     z-index: 1;
 }
 
-.container{
+.container {
     display: flex;
     padding-top: 50px;
     min-width: 800px;
     z-index: inherit;
 }
 
-h2{
+h2 {
     font-size: 200%;
     padding-left: 50px;
     padding-right: 75px;
     color: var(--heavyColor);
-    
+
 }
 
-.items{
+.items {
     padding-left: 10px;
     padding-right: 50px;
     border-left: solid;
     border-color: black;
 }
 
-#work{
+#work {
     padding-right: 88px;
 }
 
-#big-img{
+#big-img {
     max-width: 100%;
     height: auto;
     width: auto;
 }
 
-#contact-list{
-    display:flex;
+#contact-list {
+    display: flex;
     justify-content: space-evenly;
     position: relative;
     align-items: center;
     width: fit-content;
 }
-#contact-list li{
+
+#contact-list li {
     display: inline;
     font-size: 20px;
     padding-left: 20px;
 }
 
-#contact-me{
+#contact-me {
     padding-right: 48px;
 }
 
-footer{
+footer {
     z-index: inherit;
 }
