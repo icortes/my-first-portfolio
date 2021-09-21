@@ -242,7 +242,7 @@ footer {
     }
 
     #contact-list {
-        display:inline-flexbox;
+        padding-left: 0px;
         justify-content:space-evenly;
     }
 
