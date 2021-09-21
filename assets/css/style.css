@@ -77,7 +77,6 @@ main {
 .container {
     display: flex;
     padding-top: 50px;
-    min-width: 800px;
     z-index: inherit;
 }
 
@@ -86,7 +85,16 @@ h2 {
     padding-left: 50px;
     padding-right: 75px;
     color: var(--heavyColor);
+}
 
+#about-me {
+    padding-right: 14px;
+}
+
+#about-me-img {
+    width: 150px;
+    border-radius: 10%;
+    border: 2px dashed var(--heavyColor);
 }
 
 .items {
@@ -96,12 +104,18 @@ h2 {
     border-color: black;
 }
 
-#big-img{
+#big-img {
     border: var(--imgBorders);
-
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
 
-#img4x4{
+#big-img:hover {
+    filter: sepia(33%);
+}
+
+#img4x4 {
     display: flex;
     flex-wrap: wrap;
     margin: 0px 30px 0px 40px;
@@ -109,12 +123,12 @@ h2 {
     gap: 20px 20px;
 }
 
-.small-img{
+.small-img {
     border: var(--imgBorders);
-
+    width: 400px;
 }
 
-.small-img:hover{
+.small-img:hover {
     filter: sepia(33%);
 }
 
@@ -122,28 +136,32 @@ h2 {
     padding-right: 88px;
 }
 
-#big-img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
-}
-
-#big-img:hover{
-    filter:sepia(33%);
+.text-bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    font-size: 20px;
 }
 
 #contact-list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     position: relative;
     align-items: center;
     width: 100%;
 }
 
 #contact-list li {
-    display: inline;
+    list-style-type: none;
+    color: var(--heavyColor);
     font-size: 20px;
     padding-left: 20px;
+    font-weight: bolder;
+}
+
+#contact-list li a {
+    color: var(--complimentary);
+    text-decoration: none;
 }
 
 #contact-me {
@@ -152,4 +170,43 @@ h2 {
 
 footer {
     z-index: inherit;
+}
+
+@media screen and (max-width: 840px) {
+    header {
+        display: block;
+        justify-content: center;
+    }
+
+    header .name {
+        text-align: center;
+        font-size: 275%;
+        color: var(--complimentary);
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    header nav {
+        padding-left: 0;
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        float: none;
+    }
+
+    main{
+        padding-top: 50px;
+    }
+
+    .container {
+        display: flex;
+        padding-top: 50px;
+        min-width: initial;
+        z-index: inherit;
+    }
 }
