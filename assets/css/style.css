@@ -113,7 +113,7 @@ h2 {
 }
 
 #big-img:hover {
-    filter: sepia(33%);
+    filter:grayscale(75%);
 }
 
 #img4x4 {
@@ -130,7 +130,7 @@ h2 {
 }
 
 .small-img:hover {
-    filter: sepia(33%);
+    filter: grayscale(75%);
 }
 
 #work {
