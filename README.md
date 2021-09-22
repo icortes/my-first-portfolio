@@ -6,7 +6,7 @@ For this project, I had to create a portfolio webpage from scratch. A resume and
 In this [webpage](https://icortes.github.io/my-first-portfolio/) you will find a navigation bar that will always stay on the top of the page even when you start scrolling. The navigation bar will have clickable links (About Me, Work, Contact Me) that will scroll down to the corresponding section in the page. Theres is am `About Me` section with an image of myself and some placeholder text for the time being. When you click on the images in the `Work` section it will take you to the works that I've made. At the bottom there is a `Contact Me` section with my socials and personal website.
 
 ### Prerequisites
-No prerequisites.
+A web browser.
 
 ### Installing
 No installation required.
@@ -51,7 +51,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Authors
 
-* **Isaac Cortes** 
+* **Isaac Cortes Hernandez** 
 
 - [Link to Portfolio Site](https://icortes.github.io/my-first-portfolio/)
 - [Link to Github](https://github.com/icortes)
